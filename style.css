@@ -93,7 +93,12 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: #f7f9fc;
+    background: #feffff;
+    gap: 12px;
+    background-image: url('https://wallpapers.com/images/hd/kobe-bryant-phone-5wao556eto90b613.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .chat-header {
@@ -170,7 +175,7 @@ body {
     border: none;
     border-radius: 24px;
     background: linear-gradient(135deg, #9897be, #965ce0);
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-weight: 600;
     transition: opacity 0.3s;
@@ -264,7 +269,6 @@ body {
     border-color: #873abb;
 }
 
-/* Ajustes gerais */
 * {
     margin: 0;
     padding: 0;
