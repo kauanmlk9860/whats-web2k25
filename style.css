@@ -1,4 +1,4 @@
-/* Reset e base */
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ body {
 
 .sidebar {
     width: 320px;
-    background: linear-gradient(135deg, #128C7E, #075E54);
+    background: linear-gradient(135deg, #8217c0, #873abb);
     color: white;
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@ body {
 }
 
 .message.sent {
-    background: #dcf8c6;
+    background: #bc81df;
     align-self: flex-end;
 }
 
@@ -162,14 +162,14 @@ body {
 }
 
 .message-input input:focus {
-    border-color: #128C7E;
+    border-color: #ffffff;
 }
 
 .message-input button {
     padding: 10px 18px;
     border: none;
     border-radius: 24px;
-    background: linear-gradient(135deg, #128C7E, #075E54);
+    background: linear-gradient(135deg, #9897be, #965ce0);
     color: white;
     cursor: pointer;
     font-weight: 600;
@@ -178,4 +178,135 @@ body {
 
 .message-input button:hover {
     opacity: 0.85;
+}
+
+
+/* Modo Escuro */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .app-container {
+    background: #1e1e1e;
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .sidebar {
+    background: linear-gradient(135deg, #633ac2, #702283);
+}
+
+.dark-mode .sidebar-header {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .conversation-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .chat-area {
+    background: #252525;
+}
+
+.dark-mode .chat-header {
+    background: #333;
+    border-bottom: 1px solid #444;
+}
+
+.dark-mode .messages {
+    background: #252525;
+}
+
+.dark-mode .message.sent {
+    background: #6720da;
+    color: #ffffff;
+}
+
+.dark-mode .message.received {
+    background: #333;
+    color: #ffffff;
+}
+
+.dark-mode .message-time {
+    color: #bbb;
+}
+
+.dark-mode .message-input {
+    background: #333;
+    border-top: 1px solid #444;
+}
+
+.dark-mode .message-input input {
+    background: #252525;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode .message-input input:focus {
+    border-color: #040a0a;
+}
+
+.dark-mode .message-input button {
+    background: linear-gradient(135deg, #0f0961, #651da0);
+}
+.search-bar {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    display: block;
+}
+
+.search-bar:focus {
+    border-color: #873abb;
+}
+
+/* Ajustes gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #eef1f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    display: flex;
+    height: 90vh;
+    width: 90%;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 320px;
+    background: linear-gradient(135deg, #8217c0, #873abb);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px 0;
+}
+
+.sidebar-header {
+    padding: 16px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin: 0 12px;
 }
